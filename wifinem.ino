@@ -47,7 +47,7 @@ void loop() {
   
   float nem = dht.readHumidity();
   float sicaklik = dht.readTemperature();
-  String veri = "GET https://api.thingspeak.com/update?api_key=WWSLZLR1BZ0S6GHV";   //Thingspeak komutu. Key kısmına kendi api keyimizi yazıyoruz.    
+  String veri = "GET https://api.thingspeak.com/update?api_key=**************";   //Thingspeak komutu. Key kısmına kendi api keyimizi yazıyoruz.    
   veri += "&field1=";
   veri += String(sicaklik);                                   //Göndereceğimiz sıcaklık değişkeni
   veri += "&field2=";
